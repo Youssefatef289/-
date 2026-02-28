@@ -23,8 +23,9 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+a:focus-visible {
+  outline: 3px solid #d40;
+  outline-offset: 2px;
 }
 
 .btn {
