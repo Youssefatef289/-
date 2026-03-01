@@ -1,0 +1,3 @@
+## 2025-05-15 - [Accessibility & RTL Support in Legacy Landing Pages]
+**Learning:** Legacy projects often contain accessibility anti-patterns like `outline: none` on focus and physical CSS properties (`margin-left`) that break in RTL contexts. For Arabic content, simply setting `dir="rtl"` is insufficient if the CSS is not refactored to logical properties.
+**Action:** Always check for `outline: none` and replace with `focus-visible` high-contrast outlines. Use logical properties (`margin-inline-start`, `padding-inline-start`) to ensure layout mirrors correctly across different writing directions without extra code.
