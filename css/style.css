@@ -24,6 +24,11 @@ a:focus {
 }
 
 a:focus {
+  outline: 2px solid #38b;
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible) {
   outline: none;
 }
 
