@@ -1,0 +1,3 @@
+## 2025-05-15 - [Arabic Accessibility & Keyboard Navigation]
+**Learning:** Legacy static sites often prioritize visual minimalist design (e.g., placeholder-only inputs, no focus outlines) at the expense of accessibility. In Arabic contexts, failing to set `lang="ar"` prevents screen readers from using the correct voice profile, even if text is in Arabic.
+**Action:** Always set `lang="ar"` for Arabic-first content. Use `:focus-visible` to restore focus indicators without affecting mouse users, and use `aria-label` to provide context for placeholder-only inputs without altering the visual design.
