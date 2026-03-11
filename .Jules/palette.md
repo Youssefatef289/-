@@ -1,0 +1,3 @@
+## 2025-05-15 - [A11y: Legacy Bootstrap & Forms]
+**Learning:** Legacy landing pages using Bootstrap 4.1.3 often rely on `placeholder` attributes for input labels, which is an accessibility anti-pattern as it disappears when the user starts typing and is not always correctly read by screen readers. Additionally, the `sr-only` class may be inconsistently implemented or missing in very old custom stylesheets.
+**Action:** Always verify if `.sr-only` is defined in the custom CSS and add it if missing. Replace or augment placeholder-only inputs with semantic `<label>` elements hidden via `.sr-only` to maintain the design while ensuring accessibility.
