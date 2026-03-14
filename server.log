@@ -1,0 +1,126 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1329, in <module>
+    test(
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1276, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/socketserver.py", line 457, in __init__
+    self.server_bind()
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 1323, in server_bind
+    return super().server_bind()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/http/server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/jules/.pyenv/versions/3.12.13/lib/python3.12/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /fontawesome-5.5/css/all.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /slick/slick.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /magnific-popup/magnific-popup.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /slick/slick-theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/gallery-tn-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/gallery-tn-04.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/gallery-tn-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/gallery-tn-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /js/jquery-1.9.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/telal-soul.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /magnific-popup/jquery.magnific-popup.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /slick/slick.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /js/easing.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /js/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /js/jquery.singlePageNav.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/gallery-tn-05.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/gallery-tn-06.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/infinite-loop-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/infinite-loop-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /img/infinite-loop-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /fontawesome-5.5/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /fontawesome-5.5/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:55] "GET /slick/ajax-loader.gif HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 02:59:56] "GET /slick/fonts/slick.woff HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /fontawesome-5.5/css/all.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /slick/slick.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /magnific-popup/magnific-popup.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /slick/slick-theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/gallery-tn-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/gallery-tn-04.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/gallery-tn-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/telal-soul.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/gallery-tn-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /js/jquery-1.9.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /slick/slick.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /magnific-popup/jquery.magnific-popup.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /js/easing.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /js/jquery.singlePageNav.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /js/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/gallery-tn-06.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/gallery-tn-05.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:54] "GET /img/infinite-loop-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:55] "GET /img/infinite-loop-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:55] "GET /img/infinite-loop-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:55] "GET /fontawesome-5.5/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:55] "GET /fontawesome-5.5/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:55] "GET /slick/ajax-loader.gif HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:00:55] "GET /slick/fonts/slick.woff HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /fontawesome-5.5/css/all.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /slick/slick.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /slick/slick-theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /magnific-popup/magnific-popup.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/gallery-tn-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/telal-soul.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/gallery-tn-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /js/jquery-1.9.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/gallery-tn-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /slick/slick.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/gallery-tn-04.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /magnific-popup/jquery.magnific-popup.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /js/easing.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/gallery-tn-05.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /js/jquery.singlePageNav.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /js/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/gallery-tn-06.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/infinite-loop-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/infinite-loop-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /img/infinite-loop-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /fontawesome-5.5/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /fontawesome-5.5/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /slick/ajax-loader.gif HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:01:50] "GET /slick/fonts/slick.woff HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /fontawesome-5.5/css/all.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /slick/slick.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /slick/slick-theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /magnific-popup/magnific-popup.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/gallery-tn-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/telal-soul.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/gallery-tn-04.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/gallery-tn-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /js/jquery-1.9.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/gallery-tn-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /slick/slick.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /js/easing.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /js/jquery.singlePageNav.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /magnific-popup/jquery.magnific-popup.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /js/bootstrap.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/gallery-tn-05.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:08] "GET /img/gallery-tn-06.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /img/infinite-loop-01.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /img/infinite-loop-02.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /img/infinite-loop-03.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /fontawesome-5.5/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /fontawesome-5.5/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /slick/ajax-loader.gif HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2026 03:04:09] "GET /slick/fonts/slick.woff HTTP/1.1" 200 -
