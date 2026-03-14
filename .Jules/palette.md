@@ -1,0 +1,3 @@
+## 2025-05-15 - [Arabic Accessibility & Focus Indicators]
+**Learning:** In legacy Arabic static sites, critical accessibility wins include setting `lang="ar"`/`dir="rtl"` and restoring keyboard focus indicators. Many legacy templates use `outline: none` on links, which completely breaks keyboard navigation; replacing this with high-contrast `:focus-visible` styles ensures accessibility without impacting mouse users.
+**Action:** Always check for `outline: none` in CSS and replace it with `:focus-visible`. Ensure Arabic content is served with correct language and directionality tags. Use `.sr-only` labels for form inputs that only rely on placeholders.
