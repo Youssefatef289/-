@@ -1,0 +1,3 @@
+## 2025-05-15 - [Arabic Real Estate Landing Page Accessibility]
+**Learning:** In this Arabic landing page (RTL context), many interactive elements rely solely on visual placeholders or icons without semantic labels. The project lacks standard accessibility utility classes like `.sr-only` or `.visually-hidden`, making `aria-label` the most effective tool for improving accessibility without introducing new CSS dependencies or breaking the visual layout.
+**Action:** Prioritize `aria-label` for form inputs and icon-only navigation links. Ensure all images, especially the brand logo and property gallery, have descriptive `alt` text in Arabic to provide a meaningful screen reader experience in the real estate context.
