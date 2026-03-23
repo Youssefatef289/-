@@ -1,0 +1,3 @@
+## 2024-05-24 - [Arabic RTL & Accessibility Implementation]
+**Learning:** For legacy Arabic real estate landing pages, simply translating text is insufficient; the `<html>` tag must explicitly include `lang="ar"` and `dir="rtl"` to ensure correct layout and screen reader behavior. Additionally, legacy Bootstrap (v4.x) often lacks a predefined `.sr-only` class in some custom builds, requiring manual injection in `style.css` to support accessible hidden labels.
+**Action:** Always verify `lang` and `dir` attributes on the root element. If using `replace_with_git_merge_diff` on legacy files with mixed line endings, use Python-based byte-level replacements for UTF-8 Arabic text to avoid encoding corruption and ASCII errors.
