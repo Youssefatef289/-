@@ -23,8 +23,17 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.btn:focus:not(:focus-visible),
+.tm-input:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn {
