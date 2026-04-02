@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,7 +63,7 @@
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
           <form action="">
-               <h2 class="tm-hero-title"><img src="img/telal-soul.png" alt=""></h2>
+               <h2 class="tm-hero-title"><img src="img/telal-soul.png" alt="تلال سول"></h2>
             <p class="tm-hero-subtitle">
               <span class="span-1"> تلال الساحل الشمالي </span> <br>
               امتلك شاليه أو فيلا أحلامك بأرقى وأشهر قرى الساحل الشمالي <br>
@@ -78,8 +78,8 @@
       </div>
 
       <div class="tm-next tm-intro-next">
-        <a href="#whatwedo" class="text-center tm-down-arrow-link">
-          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+        <a href="#whatwedo" class="text-center tm-down-arrow-link" aria-label="انتقل إلى الوحدات">
+          <i class="fas fa-2x fa-arrow-down tm-down-arrow" aria-hidden="true"></i>
         </a>
       </div>      
     </section>
@@ -99,7 +99,7 @@
             
             <div class="row tm-content-box "><!-- second row -->
         		<div class="col-lg-1">
-              <i class="fa-solid fa-building"></i>
+              <i class="fa-solid fa-building" aria-hidden="true"></i>
                             </div>
                 <div class="col-lg-5 ">
                     <div class="tm-intro-text-container">
@@ -109,7 +109,7 @@
                 </div>
                 
                 <div class="col-lg-1">
-                  <i class="fa-solid fa-house"></i>  </div>
+                  <i class="fa-solid fa-house" aria-hidden="true"></i>  </div>
                 <div class="col-lg-5">
                     <div class="tm-intro-text-container">
                         <h2 class="tm-text-primary mb-4">فيلات </h2>
@@ -310,8 +310,11 @@
             
             <div class="col-sm-12 col-md-6">
               <form action="" method="get">
+                <label for="name" class="sr-only">الاسم الكامل</label>
                 <input id="name" name="name" type="text" placeholder="الاسم الكامل" class="tm-input" required />
+                <label for="number" class="sr-only">رقم الهاتف</label>
                 <input id="number" name="number" type="number" placeholder="رقم الهاتف " class="tm-input" required />
+                <label for="message" class="sr-only">رسالة</label>
                 <textarea id="message" name="message" rows="8" placeholder="رساله" class="tm-input" required></textarea>
                 <button type="submit" class="btn tm-btn-submit">ارسال</button>
               </form>
