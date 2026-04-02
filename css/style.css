@@ -26,6 +26,10 @@ a:focus {
 a:focus {
   outline: none;
 }
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
 
 .btn {
   padding: 8px 32px;
@@ -262,19 +266,19 @@ blockquote {
   font-size: 20px;
   font-weight: bold;
   margin-top: -20px;
-  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .tm-text-primary {
   font-weight: bold;
   color: #357;
   font-size: 30px;
-  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .fa-building {
   font-size: 50px;
-  margin-left: 250px;
+  margin-right: 250px;
   margin-top: -10px;
 }
 .tm-continue {
@@ -283,7 +287,7 @@ blockquote {
 
 .fa-house {
   font-size: 50px;
-  margin-left: 230px;
+  margin-right: 230px;
   margin-top: -10px;
 }
 
@@ -296,7 +300,7 @@ button {
   border: none;
   border-radius: 10px;
   font-size: 25px;
-  margin-left: -200px;
+  margin-right: -200px;
 }
 
 button:hover {
@@ -363,7 +367,7 @@ button:hover {
 
 /* Work */
 .tm-title {
-  margin-left: -100px;
+  margin-right: -100px;
   font-size: 40px;
   font-weight: bold;
 }
@@ -573,7 +577,7 @@ figure.effect-honey:hover h2 i {
   color: white;
 }
 .contact-item {
-  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 50px;
 }
 
@@ -609,7 +613,7 @@ figure.effect-honey:hover h2 i {
   background-color: #369;
   width: 50%;
   margin-bottom: 60px;
-  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .tm-btn-submit:hover {
