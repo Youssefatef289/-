@@ -23,8 +23,15 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+/* Accessibility: High-contrast focus indicators */
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+/* Hide focus ring for mouse users where supported */
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {
