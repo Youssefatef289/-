@@ -27,6 +27,30 @@ a:focus {
   outline: none;
 }
 
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+.tm-btn-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.tm-btn-link:hover,
+.tm-btn-link:focus {
+  text-decoration: none;
+}
+
 .btn {
   padding: 8px 32px;
 }
