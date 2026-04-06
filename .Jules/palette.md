@@ -1,0 +1,3 @@
+## 2025-05-15 - [Restoring Keyboard Focus Visibility]
+**Learning:** Legacy Bootstrap templates often include global `outline: none` or `outline: 0` rules to "clean up" the UI for mouse users, which inadvertently makes the site inaccessible to sighted keyboard users. Standard focus rings often lack sufficient contrast against high-energy image backgrounds typical of real estate landing pages.
+**Action:** Use `:focus-visible` to surgically restore focus indicators without affecting mouse users. Implement high-contrast outlines using the brand's primary accent color (#d40) and `outline-offset` to ensure the focus ring is never obscured by the element's own background or adjacent content.
