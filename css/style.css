@@ -23,8 +23,18 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+/* 🎨 Palette: Enhanced focus visibility for accessibility */
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+/* Maintain original visual design for mouse users */
+a:focus:not(:focus-visible),
+.btn:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {
