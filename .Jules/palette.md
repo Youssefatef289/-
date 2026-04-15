@@ -1,0 +1,3 @@
+## 2025-05-15 - [Accessible Focus Indicators & Semantic Elements]
+**Learning:** Legacy projects often suppress focus indicators with `outline: none` for aesthetic reasons, which completely breaks keyboard navigation. Using `:focus-visible` is a non-disruptive way to restore accessibility without affecting mouse users' visual experience. Additionally, static `div` elements used as buttons are invisible to screen readers and keyboard users; refactoring them to semantic `<a>` tags with appropriate `role` or attributes is essential.
+**Action:** Always check for `outline: none` in legacy CSS and replace with `:focus-visible` high-contrast styles. Audit the DOM for `div` elements with click handlers and convert to semantic interactive elements.
