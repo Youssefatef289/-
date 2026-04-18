@@ -1,0 +1,3 @@
+## 2025-05-14 - Global Focus Restoration and Semantic Link Conversion
+**Learning:** Legacy landing pages often suppress `outline` for aesthetic reasons, breaking keyboard navigation. Restoring it via `:focus-visible` provides high-contrast accessibility while maintaining the intended "clean" look for mouse users. Additionally, converting non-semantic `<button>` elements (used for layout) into semantic `<a>` links restores native browser behavior (right-click to copy link, status bar preview) and improves SEO.
+**Action:** Use `*:focus-visible { outline: 3px solid #d40 !important; outline-offset: 3px; }` as a standard micro-UX injection for legacy sites. Always verify line endings (CRLF vs LF) before patching static CSS files to prevent tool-induced regressions.
