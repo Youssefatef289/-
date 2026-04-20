@@ -1,0 +1,3 @@
+## 2025-03-24 - Restoring Keyboard Accessibility in Legacy Arabic Site
+**Learning:** Legacy CSS often suppresses focus outlines for "cleaner" aesthetics, but this completely breaks navigation for keyboard users. In an Arabic context, even if the root `lang` is set to `en`, interactive elements still require localized `aria-label` attributes to be truly accessible to screen reader users in the region.
+**Action:** Use `:focus-visible` to restore focus indicators for keyboard users while maintaining the "clean" look for mouse users. Always provide Arabic `aria-label` for icon-only elements in this codebase.
