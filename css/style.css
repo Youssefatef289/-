@@ -23,8 +23,13 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
+a:focus:not(:focus-visible) {
   outline: none;
+}
+
+a:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
 }
 
 .btn {
