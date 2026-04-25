@@ -1,0 +1,3 @@
+## 2026-04-25 - Surgical Accessibility Restoration in Legacy Projects
+**Learning:** Legacy codebases often contain global `outline: none` resets for aesthetic reasons, which completely breaks keyboard navigation. Restoring accessibility in these environments requires surgical precision to avoid visual regressions for mouse users while providing high-contrast feedback for keyboard users. Furthermore, "Palette" PRs must remain strictly focused on a single improvement to maintain reviewability and adhere to persona constraints.
+**Action:** Use `:focus-visible` to target keyboard users specifically and always verify that accessibility improvements are implemented as isolated, surgical changes rather than bundled refactors.
