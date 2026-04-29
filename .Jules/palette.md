@@ -1,0 +1,3 @@
+## 2026-04-25 - Improving accessibility and focus visibility in Telal Soul landing page
+**Learning:** Legacy projects often use `outline: none` on focus, which breaks keyboard navigation. Using `:focus-visible` allows for high-contrast indicators for keyboard users while maintaining a clean look for mouse users. Also, localized landing pages often miss descriptive ARIA labels and alt text in the target language.
+**Action:** Always check for `outline: none` in CSS and replace with `:focus-visible` utility. Ensure all icon-only interactive elements and decorative images have appropriate ARIA attributes and localized alt text.
