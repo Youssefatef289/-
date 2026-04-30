@@ -23,10 +23,6 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
-}
-
 .btn {
   padding: 8px 32px;
 }
@@ -745,4 +741,15 @@ p {
   .tm-gallery-item {
     margin: 0;
   }
+}
+
+/* High-contrast focus indicators */
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+/* Hide default outline for mouse users while maintaining accessibility */
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
