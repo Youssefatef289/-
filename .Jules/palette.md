@@ -1,0 +1,3 @@
+## 2026-04-25 - Semantic Navigation and Form Accessibility
+**Learning:** In static landing pages where visual labels are omitted for aesthetics (placeholder-only forms), providing `aria-label` attributes in the site's primary language (Arabic) is critical for screen reader accessibility. Additionally, converting non-functional `<button>` elements to semantic `<a>` links for internal navigation restores native browser features like URL previewing.
+**Action:** Use `<a>` with button-styled classes for section jumping and always pair placeholder-only inputs with corresponding `aria-label` attributes.
