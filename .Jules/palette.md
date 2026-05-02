@@ -1,0 +1,3 @@
+## 2026-04-25 - [Accessibility Restoration in Legacy Bootstrap]
+**Learning:** Legacy projects often suppress the default browser focus ring (`outline: none`) for aesthetic reasons, which completely breaks keyboard navigation. Using `:focus-visible` allows for restoring high-contrast indicators only for keyboard users, avoiding "visual noise" for mouse users while ensuring compliance. Additionally, icon-only scroll links and placeholders-as-labels are common barriers that can be surgically fixed with ARIA attributes.
+**Action:** Always check for `outline: none` in global CSS and replace with `:focus-visible` + high-contrast outline. Ensure icon-only triggers have descriptive `aria-label`s.
