@@ -23,8 +23,9 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
 }
 
 .btn {
@@ -745,4 +746,8 @@ p {
   .tm-gallery-item {
     margin: 0;
   }
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
