@@ -23,8 +23,13 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {
@@ -60,14 +65,22 @@ blockquote {
 
 .tm-btn-primary {
   color: white;
-  background-color: #369;
+  background-color: #357;
   padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-  color: white;
-  background-color: #38b;
+  background-color: white;
+  color: #357;
+  border: 2px solid #357;
+  text-decoration: none;
 }
 
 /* Navbar */
