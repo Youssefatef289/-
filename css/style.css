@@ -23,8 +23,13 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {
@@ -296,7 +301,6 @@ button {
   border: none;
   border-radius: 10px;
   font-size: 25px;
-  margin-left: -200px;
 }
 
 button:hover {
@@ -304,6 +308,30 @@ button:hover {
   color: #357;
   transition: 0.5s;
   border: 2px solid #357;
+}
+
+.tm-btn-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  color: white;
+  background-color: #357;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.tm-btn-link:hover,
+.tm-btn-link:focus {
+  background-color: white;
+  color: #357;
+  transition: 0.5s;
+  border: 2px solid #357;
+  text-decoration: none;
 }
 
 /* Testimonials */
