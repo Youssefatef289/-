@@ -23,8 +23,18 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {

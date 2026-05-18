@@ -1,0 +1,3 @@
+## 2026-04-25 - Restoring Focus Visibility in Legacy CSS
+**Learning:** Legacy projects often use `outline: none` on interactive elements like `<a>` and `<button>` to avoid "ugly" default focus rings. This completely breaks keyboard accessibility. Using `:focus-visible` with a high-contrast outline (e.g., `3px solid #d40`) and `outline-offset` provides a modern, accessible experience that only triggers for keyboard users, leaving the visual design intact for mouse users.
+**Action:** When auditing legacy CSS, always search for `outline: none` and replace it with a global `:focus-visible` rule. Use `!important` if necessary to override component-specific resets, and ensure the color contrasts well with both light and dark backgrounds.
