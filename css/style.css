@@ -27,8 +27,19 @@ a:focus {
   outline: none;
 }
 
+:focus-visible {
+  outline: 3px solid #d40 !important;
+  outline-offset: 3px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
 .btn {
   padding: 8px 32px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .btn:hover {
@@ -62,6 +73,8 @@ blockquote {
   color: white;
   background-color: #369;
   padding: 14px 30px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .tm-btn-primary:hover,
@@ -610,6 +623,8 @@ figure.effect-honey:hover h2 i {
   width: 50%;
   margin-bottom: 60px;
   margin-left: 100px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .tm-btn-submit:hover {
