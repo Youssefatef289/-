@@ -23,8 +23,10 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+
+:focus-visible {
+  outline: 2px solid #d40 !important;
+  outline-offset: 2px;
 }
 
 .btn {
@@ -287,7 +289,8 @@ blockquote {
   margin-top: -10px;
 }
 
-button {
+button,
+.tm-btn-link {
   width: 200px;
   height: 60px;
   color: white;
@@ -297,9 +300,14 @@ button {
   border-radius: 10px;
   font-size: 25px;
   margin-left: -200px;
+  display: inline-block;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover,
+.tm-btn-link:hover {
   background-color: white;
   color: #357;
   transition: 0.5s;
