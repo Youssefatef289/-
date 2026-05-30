@@ -27,6 +27,15 @@ a:focus {
   outline: none;
 }
 
+:focus-visible {
+  outline: 2px solid #d40 !important;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
 .btn {
   padding: 8px 32px;
 }
