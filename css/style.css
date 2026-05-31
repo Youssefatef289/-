@@ -23,8 +23,13 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 2px solid #d40 !important;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {
@@ -305,6 +310,19 @@ button:hover {
   transition: 0.5s;
   border: 2px solid #357;
 }
+
+.tm-intro-text-container .btn {
+  width: 200px;
+  height: 60px;
+  padding: 0; /* Remove padding to allow line-height centering */
+  line-height: 60px; /* Vertically center text in fixed height */
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: -200px; /* Match legacy button alignment */
+}
+
+
 
 /* Testimonials */
 #testimonials {
