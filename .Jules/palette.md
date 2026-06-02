@@ -1,0 +1,3 @@
+## 2025-05-14 - [Arabic Accessibility & Focus Polish]
+**Learning:** In legacy landing pages where `outline: none` is globally applied, restoring focus visibility via `:focus-visible` with an `!important` override is a safe, high-impact micro-UX win. For localized Arabic sites, ARIA labels and alt text must match the content language to ensure correct voice synthesis by screen readers, even if the root `lang` is set to English.
+**Action:** Always check for `outline: none` in CSS and replace it with high-contrast `:focus-visible` styles. Use descriptive Arabic strings for accessibility metadata on Arabic-centric landing pages. Change `type="number"` to `type="tel"` for phone inputs to trigger the correct mobile keyboard.
