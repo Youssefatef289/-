@@ -1,0 +1,3 @@
+## 2025-05-14 - [Legacy Landing Page Accessibility & Integrity]
+**Learning:** Legacy static sites often suppress focus indicators (`outline: none`) and lack ARIA metadata for localized content. Additionally, these files often use CRLF line endings and specific encodings (like UTF-8 for Arabic), making them sensitive to automated edits that don't explicitly handle newlines and encoding.
+**Action:** Use `:focus-visible` to restore accessibility surgically. When automating HTML edits in such environments, use Python's `newline=''` and `encoding='utf-8'` (or binary mode) to ensure surgical patches stay under the 50-line limit and don't trigger full-file diffs.
