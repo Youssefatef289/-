@@ -23,8 +23,13 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 2px solid #d40 !important;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none !important;
 }
 
 .btn {
@@ -287,7 +292,8 @@ blockquote {
   margin-top: -10px;
 }
 
-button {
+button,
+.tm-btn-link {
   width: 200px;
   height: 60px;
   color: white;
@@ -299,11 +305,19 @@ button {
   margin-left: -200px;
 }
 
-button:hover {
+.tm-btn-link {
+  display: inline-block;
+  line-height: 60px;
+  text-align: center;
+}
+
+button:hover,
+.tm-btn-link:hover {
   background-color: white;
   color: #357;
   transition: 0.5s;
   border: 2px solid #357;
+  text-decoration: none;
 }
 
 /* Testimonials */
