@@ -20,11 +20,32 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #d40;
+  color: #357;
 }
 
 a:focus {
   outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #357;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .btn {
@@ -287,23 +308,35 @@ blockquote {
   margin-top: -10px;
 }
 
-button {
+button,
+.tm-btn-link {
   width: 200px;
   height: 60px;
   color: white;
   background-color: #357;
   font-weight: bold;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 10px;
   font-size: 25px;
+  /* Maintain legacy centering hack for visual parity */
   margin-left: -200px;
+  transition: all 0.3s ease;
 }
 
-button:hover {
+button:hover,
+.tm-btn-link:hover,
+.tm-btn-link:focus {
   background-color: white;
   color: #357;
-  transition: 0.5s;
-  border: 2px solid #357;
+  border-color: #357;
+  text-decoration: none;
+}
+
+.tm-btn-link {
+  display: inline-block;
+  line-height: 56px; /* Adjust for 2px border */
+  text-align: center;
+  text-decoration: none;
 }
 
 /* Testimonials */
