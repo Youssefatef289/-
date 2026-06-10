@@ -23,8 +23,21 @@ a:focus {
   color: #d40;
 }
 
-a:focus {
-  outline: none;
+:focus-visible {
+  outline: 2px solid #357;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .btn {
@@ -299,11 +312,28 @@ button {
   margin-left: -200px;
 }
 
-button:hover {
+button:hover,
+.tm-btn-link:hover {
   background-color: white;
   color: #357;
   transition: 0.5s;
   border: 2px solid #357;
+}
+
+.tm-btn-link {
+  width: 200px;
+  height: 60px;
+  color: white;
+  background-color: #357;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-left: -200px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 /* Testimonials */
