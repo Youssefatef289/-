@@ -1,0 +1,3 @@
+## 2026-06-13 - Enhanced Contact Form Accessibility and Usability
+**Learning:** In minimalist landing pages where visual labels are omitted for aesthetics, ensuring that `aria-label` text matches the placeholder text (in the content's primary language) is critical because placeholders disappear as soon as a user starts typing, leaving screen reader users without context. Additionally, using `type="tel"` and `autocomplete` attributes provides a significant micro-UX win by triggering correct mobile keyboards and reducing form friction.
+**Action:** Always associate `aria-label` with visually unlabelled inputs and use semantic types/autocomplete for all form fields.
