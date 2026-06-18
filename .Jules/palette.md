@@ -1,0 +1,3 @@
+## 2025-01-24 - Enhancing Contact Form Accessibility and mobile UX
+**Learning:** In minimalist designs where visual labels are omitted, `aria-label` should exactly match the placeholder text to ensure screen reader users have the same context as sighted users. Additionally, using `type="tel"` instead of `type="number"` for phone fields provides a better mobile experience by triggering the numeric keypad without the intrusive "spinner" arrows of a standard number input.
+**Action:** Use `aria-label` combined with `aria-required` for label-less form fields, and always prefer `type="tel"` for phone inputs.
