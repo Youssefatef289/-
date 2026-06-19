@@ -1,0 +1,3 @@
+## 2026-06-19 - Accessible Form Patterns in Minimalist Designs
+**Learning:** In minimalist landing pages where visual labels are omitted for aesthetics, ensuring that `aria-label` text matches the placeholder text exactly (including trailing spaces) is critical because placeholders disappear as soon as a user starts typing. Using `.sr-only` labels or `aria-label` provides a bridge for accessibility without altering the visual design.
+**Action:** When working on minimalist forms, always supplement inputs with `aria-label` or `.sr-only` labels, and ensure `aria-required="true"` matches the `required` attribute.
