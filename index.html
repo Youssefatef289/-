@@ -310,9 +310,9 @@
             
             <div class="col-sm-12 col-md-6">
               <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="الاسم الكامل" class="tm-input" required />
-                <input id="number" name="number" type="number" placeholder="رقم الهاتف " class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="رساله" class="tm-input" required></textarea>
+                <input id="name" name="name" type="text" placeholder="الاسم الكامل" class="tm-input" required autocomplete="name" aria-label="الاسم الكامل" aria-required="true" />
+                <input id="number" name="number" type="tel" placeholder="رقم الهاتف " class="tm-input" required autocomplete="tel" aria-label="رقم الهاتف " aria-required="true" />
+                <textarea id="message" name="message" rows="8" placeholder="رساله" class="tm-input" required aria-label="رساله" aria-required="true"></textarea>
                 <button type="submit" class="btn tm-btn-submit">ارسال</button>
               </form>
             </div>
