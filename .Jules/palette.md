@@ -1,0 +1,3 @@
+## 2026-06-19 - Contact Form Accessibility and Micro-UX
+**Learning:** In localized landing pages where visual labels are omitted for aesthetics, placeholders are often used as the only identifying information. However, placeholders disappear when typing and are not a substitute for accessible labels. Additionally, using `type="tel"` and `autocomplete` significantly improves the mobile UX for lead generation forms.
+**Action:** Always pair placeholders with identical `aria-label` strings in localized content and ensure `type="tel"` and `autocomplete` are used for contact inputs to streamline the user journey.
