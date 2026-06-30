@@ -1,0 +1,3 @@
+## 2026-06-19 - [Contact Form Accessibility Enhancements]
+**Learning:** In minimalist designs where visual labels are omitted, `aria-label` must exactly match the placeholder text (including idiosyncratic trailing spaces) to maintain context once a user starts typing and the placeholder disappears. Additionally, using `type="tel"` instead of `type="number"` for phone fields is critical for mobile UX to provide the correct keyboard without inappropriate numeric spinner UI.
+**Action:** Always verify placeholder strings for trailing whitespace before implementing `aria-label` or writing verification scripts to ensure perfect matching and prevent validation/test failures.
