@@ -1,0 +1,3 @@
+## 2026-07-01 - Restoring focus visibility in legacy projects
+**Learning:** Legacy CSS often includes 'a:focus { outline: none; }' resets that break keyboard accessibility. Restoring focus visibility via ':focus-visible' with '!important' and an 'outline-offset' is a surgical micro-UX win that improves keyboard accessibility without altering the visual design for mouse users. The '!important' suffix is often required to override similar resets found in third-party library files (like magnific-popup.css).
+**Action:** Use ':focus-visible { outline: 2px solid #357 !important; outline-offset: 2px !important; }' for high-visibility focus feedback while maintaining brand consistency.
