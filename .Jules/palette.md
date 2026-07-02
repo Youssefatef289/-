@@ -1,0 +1,3 @@
+## 2026-06-19 - Contact Form Accessibility and Usability
+**Learning:** For RTL (Arabic) landing pages where placeholders are used as visual labels, it is critical to provide matching `aria-label` attributes to ensure screen reader accessibility. Using `type="tel"` for phone fields instead of `type="number"` prevents inappropriate browser UI (like numeric spinners or locale-based commas) and ensures the correct mobile keyboard is displayed.
+**Action:** Always prefer `type="tel"` for phone inputs and provide `aria-label` and `autocomplete` attributes for improved accessibility and micro-UX on all form fields.
