@@ -1,0 +1,3 @@
+## 2026-07-08 - Improving Contact Form Accessibility and Mobile UX
+**Learning:** In minimalist landing pages where visual labels are omitted for aesthetics, ensuring that `aria-label` text matches the placeholder text exactly (including trailing spaces) is critical because placeholders disappear as soon as a user starts typing. Additionally, using `type="tel"` and `autocomplete` attributes significantly reduces friction for mobile users and improves screen reader clarity via `aria-required`.
+**Action:** Always verify Arabic placeholder strings for exact matches (like trailing spaces) before adding ARIA labels, and prioritize semantic input types over generic ones.
